@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image App</title>
+  </head>
+  <body>
+    <h1>Image App</h1>
+    <img hidden="hidden" src="{{ image_path }}" alt="Image", id="image">
+    <canvas id="canvas"></canvas>
+    <form method="post">
+      <label for="mode">Choose a mode:</label>
+      <select name="mode" id="mode">
+        <option value="everything">Everything</option>
+        <option value="box">Box</option>
+        <option value="text">Text</option>
+        <option value="points">Point</option>
+      </select>
+      <div id="input_fields"></div>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    <script type="text/javascript" src="static/script.js"></script>
+  </body>
+</html>
