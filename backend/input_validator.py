@@ -29,6 +29,7 @@ class InputSetting(BaseModel):
                 for ele in box_prompt:
                     if ele < 0 or ele > 1:
                         raise ValueError(f"Invalid box_prompt {box_prompt}")
+                # Check for correct bounding boxes
         elif mode == "text":
             if len(text_prompt) <= 0:
                 raise ValueError(f"Invalid text_prompt {box_prompt}")
